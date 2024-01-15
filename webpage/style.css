@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset some default styles for better cross-browser consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+    background-color: #110100;
+    text-align: center;
+    color: #c1aba6;
+}
+
+header {
+    background-color: #110100;
+    color: #c1aba6;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust the z-index value as needed */
+    
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Ensure equal space between items */
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    font-size: larger;
+}
+
+header a {
+    text-decoration: none;
+    color: #c1aba6;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+header a:hover {
+    color: #d09c87;
+    font-size: 1.1em;
+}
+
+.head-info {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-info li {
+    display: inline;
+    margin-left: 20px;
+}
+
+/* Optional: Create a separator */
+
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul.nav-list li {
+    margin-right: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: #c1aba6;
+    font-weight:400;
+    font-size: large;
+}
+
+nav ul.nav-list a {
+    font-size: xx-large;
+    text-decoration: none;
+    color: #c1aba6;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul.nav-list a:hover {
+    color: #d09c87;
+    transform: scale(1.1);
+}
+
+nav .navbar {
+    position: relative;
+}
+
+nav img.nav-image {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    opacity: 0.5;
+    max-width: 1515px;
+    transition: opacity 0.6s ease-in-out;
+}
+
+nav .section-overlay {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position as needed */
+    left: 50%; /* Adjust the horizontal position as needed */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the section appears on top of the image */
+    display: inline-block;
+}
+
+.nav-image:hover {
+    opacity: 0.65;
+}
+
+main {
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 25px;
+}
+
+aside {
+    flex-basis: 30%;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+aside.movie-images {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column; /* Arrange child elements vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 15px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article div {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #110100;
+    color: #c1aba6;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #c1aba6;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d09c87;
+    font-size: 1.1em;
+}
+
+aside .movie-images {
+    background-color: #270100;
+}
+
+.movie-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Adjust the gap between grid items */
+    background-color: #270100;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.movie-images img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.75;
+    border-radius: 8px; /* Optional: Add rounded corners to images */
+    transition: transform 0.3s ease, opacity 0.7s ease-in-out;
+}
+
+/* Hover state for images */
+.movie-images img:hover {
+    transform: scale(1.1); /* Adjust the scale factor based on your preference */
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.movie-info {
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 55%;
+}
+
+.movie-info img {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    height: auto;
+    max-width: 100%;
+}
+
+.movie-info div {
+    flex: 1;
+}
+
+.fun-facts {
+    background-color: #270100;
+}
+
+
+section p {
+    text-align: left;
+}
+
+.trivia-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trivia-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.trivia-container * {
+    margin: auto;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-message {
+    text-align: center;
+}
+
+.next-btn {
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+/* Add more styles as needed */
+
